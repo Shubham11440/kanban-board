@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1>KANBAN BOARD</h1>
     
-      <KanbanBoard />
+      <KanbanBoard  />
       
     </div>
   );

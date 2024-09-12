@@ -1,244 +1,234 @@
 .kanban-board {
-  
-    padding: 20px;
-    display: grid;
-    /* flex-direction: column; */
-    align-items: center;
-    
+  padding-left: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  width: 96.5%;
 }
 
 .controls {
-    margin-bottom: 20px;
-    display: flex;
-   
-    gap: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .add-task-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .add-task-button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 .display-button {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;   
-    padding: 12px 24px;
-    height: 50px;
-    
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  height: 50px;
+
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .display-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 .display-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
 .dropdown-button {
-    background-color: #ffffff;
-    color: #000000;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .dropdown-button:hover {
-    background-color: #f1f1f1;
-    border-color: #bbb;
+  background-color: #f1f1f1;
+  border-color: #bbb;
 }
 
 .dropdown-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    z-index: 1000;
-    top: 100%;
-    left: 0;
-    min-width: 150px;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
 }
 
 .dropdown-content button {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    padding: 10px 15px;
-    font-size: 14px;
-    text-align: left;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 8px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-align: left;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
 }
 
 .dropdown-content button:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
-
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
-
 
 .board {
-    display: grid;
-    padding: 10px;
-    grid-gap: 10px;
+  display: grid;
+  grid-gap: 10px;
+  width:100%;
 }
 
-
 .column {
-    display: flex;
-    flex-direction: column;
-   
-    padding: 20px;
-    border-radius: 10px;
- 
-    gap: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  border-radius: 10px;
+
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .column:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 .column-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 .column-header span {
-    color: #666;
+  color: #666;
 }
 
 .task-card {
-    background-color: #ffffff;
-    width: 300px;
-    text-align: left; 
-    border-radius: 3px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    border: 1px solid #e0e0e0;
-    overflow: hidden; 
-    position: relative; 
+  background-color: #ffffff;
+  width: 90%;
+  text-align: left;
+  border-radius: 3px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  position: relative;
 }
-
 
 .task-title {
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333;
 }
-
-
-
-
 
 .task-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
 }
 
-
-
 @media (min-width: 1024px) {
-    .board {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* Medium Screens (Tablets) */
 @media (max-width: 1024px) {
-    .board {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .board {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Small Screens (Mobile) */
 @media (max-width: 768px) {
-    .kanban-board {
-        padding: 10px;
-    }
+  .kanban-board {
+    padding: 10px;
+  }
 
-    .board {
-        grid-template-columns: 1fr;
-    }
+  .board {
+    grid-template-columns: 1fr;
+  }
 
-    .task-card {
-        margin-bottom: 20px;
-    }
+  .task-card {
+    margin-bottom: 20px;
+  }
 }
 
 /* Very Small Screens (Phones) */
 @media (max-width: 480px) {
-    .column {
-        max-width: 100%;
-        padding: 10px;
-    }
+  .column {
+    max-width: 100%;
+    padding: 10px;
+  }
 
-    .task-title {
-        font-size: 16px;
-    }
+  .task-title {
+    font-size: 16px;
+  }
 
-    .task-card {
-        padding: 10px;
-    }
+  .task-card {
+    padding: 10px;
+  }
 
-    .dropdown-button {
-        font-size: 14px;
-        padding: 8px;
-    }
+  .dropdown-button {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
